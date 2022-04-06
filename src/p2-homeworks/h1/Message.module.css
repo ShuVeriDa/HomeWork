@@ -1,3 +1,43 @@
-.message {
+.wrapper {
+    display: flex;
+    align-items: flex-end;
+    padding: 5px 10px;
+}
 
+.avatar {
+    border-radius: 50%;
+    /*border-radius: 100%;*/
+    width: 50px;
+    height: 50px;
+}
+
+.angle {
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle at 0 0, rgba(232, 9, 9, 0) 20px, rgba(50, 49, 49, 0.93) 0);
+}
+
+.messageContent {
+    background: rgba(50, 49, 49, 0.93);
+    color: #fff;
+    border-radius:  5px 5px 5px 0;
+    padding: 10px;
+}
+
+.NameUser {
+    color: mediumpurple;
+    font-weight: bold;
+}
+
+.message {
+    color: rgb(145, 241, 172);
+    min-width: 150px;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.time {
+    display: flex;
+    justify-content: flex-end;
+    color: green;
 }

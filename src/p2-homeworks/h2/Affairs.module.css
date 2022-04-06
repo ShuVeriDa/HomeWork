@@ -1,3 +1,39 @@
-.someClass {
+.button {
+    margin-right: 10px;
+    padding: 0 20px
+}
 
+.button:last-child {
+    margin-right: 0;
+}
+
+button {
+    color: rgb(52, 248, 114);
+    background: #002c04;
+}
+
+.buttonDelete {
+    padding: 0 30px;
+}
+
+.affairs {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.name {
+    color: rgb(52, 248, 114);
+}
+.priority {
+    color: green;
+}
+
+.high {
+    color: red;
+}
+
+.middle {
+    color: orange;
 }

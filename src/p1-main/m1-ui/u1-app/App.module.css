@@ -1,3 +1,38 @@
 .App {
+    color: rgb(52, 248, 114);
+}
 
+.navLinks {
+    position: relative;
+    width: 210px;
+    display: inline-flex;
+    justify-content: space-between;
+    top: 0;
+    left: -230px;
+}
+
+
+.navLinks:hover {
+    left: 0;
+}
+
+.navLinks a {
+    color: rgb(52, 248, 114);
+    text-decoration: none;
+}
+
+.navLinks a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.navLinks::Before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: greenyellow;
+    position: relative;
+    cursor: pointer;
+    top: 0;
+    left: 230px;
 }
