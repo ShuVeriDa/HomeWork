@@ -1,0 +1,9 @@
+.span {
+    display: inline-block;
+
+}
+
+.span:hover {
+    cursor: pointer;
+    color: red;
+}
