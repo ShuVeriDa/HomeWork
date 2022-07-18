@@ -3,6 +3,7 @@ import {RequestAPI} from "../api/request-api";
 
 export const Request = () => {
    const [check, setCheck] = useState<boolean>(false)
+   const [errorShow, setErrorShow] = useState<string>('')
 
    useEffect(() => {
          RequestAPI.post(check)
@@ -10,6 +11,7 @@ export const Request = () => {
          .catch((error) => {
             console.log({...error});
             console.log(error.response ? error.response.data.errorText : error.message);
+            setErrorShow(error.response ? error.response.data.errorText : error.message)
          })
    }, [check])
 
@@ -21,6 +23,8 @@ export const Request = () => {
       <div>
          <button>button</button>
          <input type="checkbox" onChange={onChangeChecked}/>
+         <div>{errorShow}</div>
+
       </div>
    );
 };
